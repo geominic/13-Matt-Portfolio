@@ -825,3 +825,256 @@ footer{
       transform: translateY(0);
     }
 }
+
+@media only screen and (min-width: 1920px) {
+    body{
+        padding: 4.5rem 8rem 0 8rem;
+    }
+    .landing{
+        .landing2{
+            padding: 2.5rem 2rem;
+            .navbar{
+                .logo{
+                    img{
+                        width: 70px;
+                        height: 70px;
+                        background-color: var(--white1);
+                        border-radius: var(--radius2);
+                    }
+                    div{
+                        h1{
+                            font-size: 2.25rem;
+                        }
+                        p{
+                            font-size: 1.5rem;
+                        }
+                    }
+                }
+                .nav{
+                    a{
+                        p{
+                            font-size: 1.5rem;
+                        }
+                    }
+                    i{
+                        font-size: 2rem;
+                    }
+                }
+                .btn-nav{
+                    a{
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+            .text{
+                line-height: 5rem;
+                h1{
+                    font-size: 6rem;
+                    span{
+                        font-size: 3.5rem;
+                    }
+                }
+            }
+            .btn{
+                button{
+                    a{
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+    .about-me{
+        margin-bottom: 10rem;
+        .about{
+            .text{
+                p.header{
+                    font-size: 6rem;
+                }
+                p{
+                    font-size: 1.75rem;
+                }
+                p.main{
+                    padding-left: 1rem;
+                }
+                button{
+                    font-size: 1.5rem;
+                }
+            }
+            .myimg{
+                .card{
+                    width: 20rem;
+                    p.name{
+                        b{
+                            font-size: 2rem;
+                        }
+                    }
+                    hr{
+                        width: 80%;
+                    }
+                    .social-media{
+                        margin-top: 1rem;
+                        a{
+                            i{
+                                font-size: 1.6rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .projects{
+        margin-bottom: 10rem;
+        .text{
+            h1{
+                font-size: 11rem;
+            }
+            p{
+                font-size: 2rem;
+                margin-top: 1rem;
+                b{
+                    color: var(--white1);
+                    font-size: 2.25rem;
+                }
+            }
+            p.small{
+                color: var(--white2);
+                font-size: 1.75rem;
+                margin-top: 0;
+            }
+        }
+        .grid{
+            margin-top: 7rem;
+            .box{
+                .img-slide{
+                    gap: 1rem;
+                    &::after{
+                        font-size: 3rem;
+                    }
+                }
+                .img-bot{
+                    margin-top: 1.25rem;
+                    p{
+                        margin-left: .7rem;
+                    }
+                }
+            }
+        }
+    }
+    .modal {
+        .modal-content {
+            width: 55%;
+            height: 65%;
+            padding: 3rem;
+            p{
+                font-size: 1.75rem;
+            }
+            .content{
+                margin-bottom: 2rem;
+                .img-slide{
+                    width: 46%;
+                    gap: 1rem;
+                }
+                .img-info{
+                    width: 52%;
+                    p{
+                        margin-left: 1rem;
+                        font-size: 3.5rem;
+                    }
+                }
+            }
+            .modal-close {
+                margin-top: 3rem;
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .modal-trigger {
+        font-size: 1.5rem;
+    }
+    .contact-me{
+        .contact{
+            padding: 3rem 4rem;
+            border-radius: var(--radius1);
+            gap: 2rem;
+            h1{
+                font-size: 6rem;
+            }
+            iframe{
+                width: 500px;
+                height: 500px;
+                &:hover{
+                    width: 850px;
+                    height: 600px;
+                    filter: none;
+                }
+            }
+            .social-media{
+                a{
+                    margin: .75rem 0;
+                    font-size: 1.75rem;
+                    i{
+                        font-size: 1.6rem;
+                    }
+                    span{
+                        color: var(--white2);
+                    }
+                }
+                p.extra{
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+    footer{
+        margin-top: 13rem;
+        padding: 2rem 3rem 1.5rem 3rem;
+        border-radius: 1.5rem 1.5rem 0 0;
+        .top-f{
+            justify-content: space-between;
+            display: flex;
+            .logo{
+                img{
+                    width: 70px;
+                    height: 70px;
+                    background-color: var(--white1);
+                    border-radius: var(--radius2);
+                }
+                div{
+                    h1{
+                        font-size: 2.25rem;
+                    }
+                    p{
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+            .bot-nav{
+                gap: 1.5rem;
+                a{
+                    p{
+                        font-size: 1.75rem;
+                    }
+                }
+                hr{
+                    height: 30%;
+                }
+            }
+        }
+        .bot-f{
+            margin-top: 3rem;
+            p{
+                color: var(--white2);
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .tag{
+        margin: 2rem 0 1rem 0;
+        p{
+            margin-top: .5rem;
+            font-size: 1.75rem;
+        }
+    }
+}
