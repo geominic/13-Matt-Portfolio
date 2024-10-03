@@ -1599,4 +1599,13 @@ input:checked+.slider:before {
             }
         }
     }
+    .tag {
+        p {
+            color: black;
+        }
+    
+        p.num {
+            color: #333333;
+        }
+    }
 }
