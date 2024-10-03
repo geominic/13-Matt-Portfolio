@@ -1555,4 +1555,48 @@ input:checked+.slider:before {
             }
         }
     }
+    .modal-trigger {
+        background-color: #bababa;
+        border-color: black;
+        color: #333333;
+        &:hover {
+            background-color: #333333;
+            color: #ccc;
+        }
+        &:focus {
+            color: #ccc;
+        }
+    }
+    .modal {
+        background-color: rgba(0, 0, 0, 0.5);
+    
+        .modal-content {
+            background-color: #bababa;
+            p{
+                color: #333333;
+            }
+            .content {
+                .img-slide {
+                    border: 1.5px solid black;
+                }
+                .img-info {
+                    width: 52%;
+                    p {
+                        color: var(--dark-color);
+                    }
+                }
+            }
+    
+            .modal-close {
+                background-color: #bababa;
+                color: #333333;
+                border: 1.5px solid black;
+    
+                &:hover {
+                    background-color: #333;
+                    color: #ccc;
+                }
+            }
+        }
+    }
 }
