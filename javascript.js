@@ -1,3 +1,4 @@
+//textAnimation
 const elements = document.querySelectorAll('[id^="am"]');
 
 window.addEventListener('scroll', () => {
@@ -15,35 +16,32 @@ window.addEventListener('scroll', () => {
   });
 });
 
-
+//flotaingNav
 const floatingNav = document.getElementById('floating-nav');
 const navToggle = document.getElementById('nav-toggle');
 const navLinks = document.querySelector('.nav-links');
 
 navToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('show');
+  navLinks.classList.toggle('show');
 });
 
 window.addEventListener('scroll', () => {
-    if (window.scrollY > document.querySelector('.landing').offsetHeight) {
-        floatingNav.classList.add('show');
-    } else {
-        floatingNav.classList.remove('show');
-    }
+  if (window.scrollY > document.querySelector('.landing').offsetHeight) {
+    floatingNav.classList.add('show');
+  } else {
+    floatingNav.classList.remove('show');
+  }
 });
 
-
+//Modals
 // Get all modal trigger buttons
 const modalTriggers = document.querySelectorAll('.modal-trigger');
 
-// Add event listener to each modal trigger button
 modalTriggers.forEach((trigger) => {
   trigger.addEventListener('click', (e) => {
-    // Get the modal window ID from the data-modal attribute
     const modalId = trigger.getAttribute('data-modal');
     const modal = document.getElementById(modalId);
 
-    // Show the modal window
     modal.style.display = 'block';
   });
 });
@@ -60,4 +58,24 @@ modalCloseButtons.forEach((button) => {
     // Hide the modal window
     modal.style.display = 'none';
   });
+});
+
+//lightMode
+const modeToggle = document.getElementById('modeToggle');
+const body = document.body;
+
+// Check for saved user preference
+if (localStorage.getItem('lightMode') === 'enabled') {
+  body.classList.add('light-mode');
+  modeToggle.checked = true;
+}
+
+modeToggle.addEventListener('change', () => {
+  if (modeToggle.checked) {
+    body.classList.add('light-mode');
+    localStorage.setItem('lightMode', 'enabled');
+  } else {
+    body.classList.remove('light-mode');
+    localStorage.setItem('lightMode', 'disabled');
+  }
 });
